@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url("./Roboto/Roboto-Black.ttf");
+}
+
+body{
+    background-color: #f4f4f4;
+    font-family: 'roboto';
+    height: 100vh;
+}
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-slider-container{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+}
+
+.left-slider-container > div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.right-slider-container{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 30%;
+    top: 0;
+}
+
+.right-slider-container > div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+button{
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+}
+
+.slider-container .buttons button{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .buttons .down-button{
+    transform: translateX(-100%);
+    margin-top: 40px;
+}
