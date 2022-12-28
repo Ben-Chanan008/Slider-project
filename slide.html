@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Slider</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+    }
+
+    a{
+	   text-decoration:none;
+	   color:#fff !important;	
+    }
+</style>
+<body>
+    <div class="div">
+        <a href="./index.html"><button class="btn">CLICK TO SLIDE</button></a>
+    </div>
+    <script src="./main.js">
+        clickButton.addEventListener('click', visit);
+        function visit(e){
+            // e.preventDefault();
+            location.href = 'index.html'
+        }
+    </script>
+</body>
+</html>

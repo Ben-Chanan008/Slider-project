@@ -26,6 +26,7 @@ body{
     position: absolute;
     height: 100%;
     width: 30%;
+    transition: transform .2s ease-in-out;
 }
 
 .left-slider-container > div{
@@ -44,6 +45,7 @@ body{
     width: 70%;
     left: 30%;
     top: 0;
+    transition: transform .5s ease-in-out;
 }
 
 .right-slider-container > div{
@@ -76,4 +78,28 @@ button:hover{
 .slider-container .buttons .down-button{
     transform: translateX(-100%);
     margin-top: 40px;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: none;
+}
+
+.btn-round{
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    z-index: 100;
+    border-radius: 3px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: 'roboto';
+}
+
+.btn-round i{
+    margin: 5px;
 }
