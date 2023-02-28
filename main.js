@@ -13,10 +13,17 @@ leftSlider.style.top = `-${(lengthOfSlides - 1) * 100}vh`
 
 upButton.addEventListener('click', () => changeSlides('up'));
 downButton.addEventListener('click', () => changeSlides('down'));
-
+document.addEventListener('keyup', (e) => {
+	if(e.key.toLowerCase() === 'arrowup'){
+		changeSlides('up');
+	}
+	if(e.key.toLowerCase() === 'arrowdown'){
+		changeSlides('down'); 
+	}
+});
 const changeSlides = (direction) => {
     const sliderHieght = container.clientHeight;
-    // console.log(sliderHieght)
+    console.log('working');
     if(direction === 'up'){
         activeSliderIndex++
         if(activeSliderIndex > lengthOfSlides -1){
